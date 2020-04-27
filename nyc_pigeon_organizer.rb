@@ -1,4 +1,4 @@
-#require ("pry")
+require ("pry")
 
 def nyc_pigeon_organizer(data)
   # write your code here!
@@ -8,6 +8,7 @@ def nyc_pigeon_organizer(data)
       attributeOption[1].map do |name|
         new_hash[name] = {}
         new_hash[name][attribute[0]] = [] ? new_hash[name][attribute[0]] == nil
+        binding.pry
         new_hash[name][attribute[0]] << attributeOption
       end 
     end 
