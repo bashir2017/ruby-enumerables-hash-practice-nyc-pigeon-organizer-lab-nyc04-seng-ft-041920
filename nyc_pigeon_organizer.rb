@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
           new_hash[name][attribute[0]] = []
         end 
         binding.pry 
-        new_hash[name][attribute[0]] << attributeOption
+        new_hash[name][attribute[0]] << attributeOption[0].to_s
       end 
     end 
   end 
